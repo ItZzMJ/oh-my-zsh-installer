@@ -10,8 +10,10 @@ if [-f ~/.zshrc]; then
 fi
 
 # download zshrc to ~/.zshrc
+curl -fsSL https://raw.githubusercontent.com/ItZzMJ/oh-my-zsh-installer/main/.zshrc -o ~/.zshrc
 
 # download kali theme to ~/.oh-my-zsh/themes/
+curl -fsSL https://github.com/ItZzMJ/oh-my-zsh-installer/blob/main/kali.zsh-theme -o ~/.oh-my-zsh/themes/kali.zsh-theme
 
 # install zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
