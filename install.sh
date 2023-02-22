@@ -25,7 +25,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 
 # set permissions
-chmod g-w,o-w ~./oh-my-zsh/custom/plugins/zsh-completions
-chmod g-w,o-w ~./oh-my-zsh/custom/plugins/zsh-completions/src
+chmod g-w,o-w ~/.oh-my-zsh/custom/plugins/zsh-completions
+chmod g-w,o-w ~/.oh-my-zsh/custom/plugins/zsh-completions/src
 
 
