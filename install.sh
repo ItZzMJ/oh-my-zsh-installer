@@ -5,7 +5,7 @@ apt update
 apt install zsh -y
 
 # create new .zshrc
-if [-f ~/.zshrc]; then
+if [ -f "~/.zshrc" ]; then
   rm ~/.zshrc
 fi
 
