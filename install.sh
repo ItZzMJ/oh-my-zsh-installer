@@ -6,6 +6,11 @@ echo "Installing ZSH\n"
 
 apt install zsh -y
 
+# install oh-my-zsh
+echo "Installing Oh-My-Zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
 # create new .zshrc
 if [ -f "~/.zshrc" ]; then
   rm ~/.zshrc
