@@ -4,7 +4,7 @@ apt update
 
 echo "Installing ZSH\n"
 
-apt install zsh -y
+apt install zsh git -y
 
 # install oh-my-zsh
 echo "Installing Oh-My-Zsh"
@@ -18,11 +18,11 @@ fi
 
 echo "Downloading .zshrc \n"
 # download zshrc to ~/.zshrc
-curl -fsSL https://raw.githubusercontent.com/ItZzMJ/oh-my-zsh-installer/main/.zshrc -o ~/.zshrc
+curl -fsSLN https://raw.githubusercontent.com/ItZzMJ/oh-my-zsh-installer/main/.zshrc -o ~/.zshrc
 
 # download kali theme to ~/.oh-my-zsh/themes/
 echo "Downloading theme \n"
-curl -fsSL https://raw.githubusercontent.com/ItZzMJ/oh-my-zsh-installer/main/kali.zsh-theme -o ~/.oh-my-zsh/themes/kali.zsh-theme
+curl -fsSLN https://raw.githubusercontent.com/ItZzMJ/oh-my-zsh-installer/main/kali.zsh-theme -o ~/.oh-my-zsh/themes/kali.zsh-theme
 
 # install zsh-autosuggestions
 echo "Downloading autosuggestions \n"
