@@ -1,10 +1,10 @@
 #!/bin/sh
 
-apt update
+sudo apt update
 
 echo "Installing ZSH\n"
 
-apt install zsh git -y
+sudo apt install zsh git -y
 
 # install oh-my-zsh
 echo "Installing Oh-My-Zsh"
@@ -13,6 +13,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # create new .zshrc
 if [ -f "~/.zshrc" ]; then
   rm ~/.zshrc
+fi
+
+# del .oh-my-zsh if exists
+if [ -d "~/.oh-my-zsh" ]; then
+  rm -r ~/.oh-my-zsh
 fi
 
 echo "Downloading .zshrc \n"
